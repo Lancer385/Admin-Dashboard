@@ -48,6 +48,7 @@ a:hover {
     grid-template-columns: 2fr 1fr;
     background-color: white;
     grid-template-rows: 70px 60%;
+    padding-right: 30px;
 }
 
 .shadow {
@@ -68,12 +69,12 @@ a:hover {
 
 #search input {
     width: 95%;
-    height: 25px;
+    height: 30px;
     padding-left: 15px;
     border: none;
     border-radius: 20px;
     outline: none;
-    background-color: #f3f4f6;
+    background-color: #e2e8f0;
 }
 
 
@@ -90,7 +91,8 @@ a:hover {
 
 #profile {
     justify-content: flex-end;
-    gap: 25px;
+    gap: 20px;
+    padding-right: 20px;
 }
 
 #welcome {
@@ -108,8 +110,8 @@ a:hover {
 }
 
 button {
-    width: 100px;
-    height: 35px;
+    width: 95px;
+    height: 40px;
     border-radius: 25px;
     color: white;
     font-size: 15px;
