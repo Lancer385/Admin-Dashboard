@@ -3,6 +3,7 @@
 body{
     margin: 0;
     padding: 0;
+    background-color: #e2e8f0;
     font-family: 'Roboto', sans-serif;
 }
 a {
@@ -12,7 +13,7 @@ a {
     height: 100vh;
     display: grid;
     grid-template-columns: 250px 3fr;
-    grid-template-rows: 185px 1fr ;
+    grid-template-rows: 175px 1fr;
 }
 
 
@@ -27,7 +28,7 @@ a {
 .sidebar a {
     color: white;
 }
-.sidebar a:hover {
+a:hover {
     color: #082f49;
     transition: 0.3s;
 }
@@ -44,9 +45,13 @@ a {
 
 .header {
     display: grid;
-    box-shadow: 0px 0px 8px rgba(0,0,0,.6);
-    grid-template-columns: 2fr 1.2fr;
-    grid-template-rows: 70px 1fr;
+    grid-template-columns: 2fr 1fr;
+    background-color: white;
+    grid-template-rows: 70px 60%;
+}
+
+.shadow {
+    box-shadow: 0px 2px 8px rgba(152, 151, 151, 0.375);
 }
 
 .header>div {
@@ -85,13 +90,17 @@ a {
 
 #profile {
     justify-content: flex-end;
-    gap: 35px;
+    gap: 25px;
+}
+
+#welcome {
+    gap: 20px;
 }
 #welcome div {
     line-height: 10px;
 }
 #welcome b {
-    font-size: 12px;
+    font-size: 12.5px;
 }
 #buttons {
     justify-content: flex-end;
@@ -112,4 +121,88 @@ button {
 button:hover {
     transition-duration: 0.3s;
     background-color: #082f49;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 72% 28%;
+    grid-template-rows: 400px 1fr;
+    gap: 8px;
+    padding: 15px;
+}
+.content p {
+    margin-top: 0;
+    color: #4b5563;
+}
+
+.content>h3, .content h4{
+    letter-spacing: 1px;
+}
+.your-projects {
+    grid-row: 1 / 3;
+}
+.your-projects>div {
+    display: grid;
+    gap: 25px;
+    padding-right: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.card {
+    padding: 20px;
+    font-size: 16px;
+    background-color: white;
+    border-left: solid 8px #0284c7;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px;
+}
+.card>div+div {
+    display: flex;
+    gap: 25px;
+    padding-right: 20px;
+    justify-content: flex-end;
+}
+.card h3 , .card1 h4 {
+    margin-bottom: 2px;
+}
+.card img {
+    width: 25px;
+}
+
+
+
+.announcments ,.trending{
+    padding: 0 20px 0 0;
+}
+.card1 {
+    background-color: white;
+    font-size: 13px;
+    padding: 20px 30px 20px 40px;
+    border-radius: 10px;
+}
+
+
+.trending>div>div {
+    display: grid;
+    height: 330px;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    padding: 20px 10px 10px 20px;
+}
+.trending img {
+    justify-self: center;
+}
+
+body>a{
+    position: absolute;
+    font-size: 14px;
+    font-weight: 600;
+    top: 550px;
+    left: 40px;
+    text-align: center;
+    width: 150px;
+    color: white;
 }
